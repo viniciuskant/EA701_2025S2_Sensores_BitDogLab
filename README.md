@@ -6,6 +6,9 @@
 ## 1. Descrição do sensor
 - Fabricante / modelo: GY-33 TCS34725
 - Princípio de funcionamento:
+
+<img src="./docs/diagram.png" alt="Princípio de Funcionamento" width="700" height="400">
+
 >  O sensor TCS3472 retorna uma saída digital correspondendo às leituras de luz vermelha, verde e azul, bem como a intensidade total da luz recebida pelo sensor. Para tanto o sensor segue o seguinte fluxo de operação:
 >- A luz é percebida pelo sensor e passada por um filtro bloqueador de luz infravermelha (IR blocking filter), responsável por diminuir a contribuição da luz infravermelha no espectro de luz obtido e permitindo melhor precisão na leitura dos dados.
 >- Um grid 3x4 de fotodiodos sensíveis à cor (vermelho, verde, azul e intensidade de luz) localizados no circuito integrado realizam a leitura da luz filtrada, mandando os dados para 4 conversores ADC (analógico para digital).
@@ -55,7 +58,7 @@
   ```bash
   picotool load main.uf2 -f
   ```
--  Para ler a saída serial produzida, utilize o picocom pelo comando, substituindo pelo caminho para a placa:
+- Para ler a saída serial produzida, utilize o picocom pelo comando, substituindo pelo caminho para a placa:
   ```bash
   picocom /dev/ttyACM0
   ```
@@ -69,7 +72,7 @@ A seguir um exemplo de montagem e detecção das cores Azul e Vermelho:
 
 - Dentre as limitações do projeto estão a detecção limitada de cores: detectando apenas Vermelho, Verde, Azul, Amarelo, Magenta, Ciano, Branco e Preto; a baixa sensibilidade, exigindo que o sensor seja colocado muito próximo à cor a ser lida; e baixa capacidade de interpolar cores.
 
-## 📁 6. Estrutura do Repositório
+## 6. Estrutura do Repositório
 
 ```text
 
