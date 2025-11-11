@@ -36,7 +36,7 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 2. Rotina de calibração guiada para 8 cores
 3. Leitura contínua dos valores RGB do sensor
 4. Detecção primária por comparação com intervalos calibrados
-5. Detecção secundária por conversão RGB→HSL e comparação com faixas de matiz
+5. Detecção secundária por conversão RGB -> HSL e comparação com faixas de matiz
 6. Saída serial do resultado
 
 ## 3. Resultados e Análise
