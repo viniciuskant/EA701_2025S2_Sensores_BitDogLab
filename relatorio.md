@@ -58,6 +58,22 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 - Limitação a 8 cores predefinidas na calibração
 - Interpolação HSL menos precisa para cores saturadas
 
+**Montagem e Resultados**
+A seguir alguns registros de leituras realizadas:
+
+<img src="./img/montagem.jpeg" alt="Montagem do Equipamento" width="500" height="340">
+
+<img src="./img/cores/vermelho.jpeg" alt="Detecção da cor Vermelho" width="500" height="340">
+<img src="./img/cores/verde.jpeg" alt="Detecção da cor Verde" width="500" height="340">
+<img src="./img/cores/azul.jpeg" alt="Detecção da cor Azul" width="500" height="340">
+<img src="./img/cores/amarelo.jpeg" alt="Detecção da cor Amarelo" width="500" height="340">
+<img src="./img/cores/ciano.jpeg" alt="Detecção da cor Ciano" width="500" height="340">
+<img src="./img/cores/rosa.jpeg" alt="Detecção da cor Rosa" width="500" height="340">
+<img src="./img/cores/laranja.jpeg" alt="Detecção da cor Laranja" width="500" height="340">
+<img src="./img/cores/preto.jpeg" alt="Detecção da cor Preto" width="500" height="340">
+<img src="./img/cores/branco.jpeg" alt="Detecção da cor Branco" width="500" height="340">
+
+
 ## 4. Dificuldades e Soluções
 
 **Desafio 1: Timing do Barramento I2C**
@@ -91,7 +107,8 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 
 ## 6. Referências
 
-1. **AMS-TAOS USA** – (*TCS34725 Color Light-to-Digital Converter*)[https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf] - Documentação técnica do sensor de cor
+1. **AMS-TAOS USA** – [*TCS34725 Color Light-to-Digital Converter*](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf) - Documentação técnica do sensor de cor
 2. **Raspberry Pi Foundation** - *Pico C/C++ SDK* - Documentação de desenvolvimento
-3. **BitDogLab** - (*Esquemático da BitDogLab*)[https://docs.google.com/document/d/1cR74ubS8tIO2sSQk1Hf8aKo57Ta3R8EJL4mGiqV2mH0/edit?usp=sharing] - Diagramas e especificações da plataforma
-4. **Wikipedia** - (*HSL and HSV*)[https://en.wikipedia.org/wiki/HSL_and_HSV] - Fundamentos teóricos do espaço de cores HSL
+3. **BitDogLab** - [*Esquemático da BitDogLab*](https://docs.google.com/document/d/1cR74ubS8tIO2sSQk1Hf8aKo57Ta3R8EJL4mGiqV2mH0/edit?usp=sharing) - Diagramas e especificações da plataforma
+4. **Wikipedia** - [*HSL and HSV*](https://en.wikipedia.org/wiki/HSL_and_HSV) - Fundamentos teóricos do espaço de cores HSL
+
