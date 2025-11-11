@@ -12,14 +12,17 @@
 >- Cada um dos 4 ADCs integrados realiza a conversão do valor lido pelos fotodiodos para um valor digital de 16 bits, transferindo os dados obtidos para 4 registradores dedicados (um para cada ADC).
 >- Finalmente, os dados são comunicados via interface de 2 fios do tipo I²C serial de alta velocidade (400 kHz).
 >- Adicionalmente, o sensor provê separadamente um sinal de interrupção como saída, sendo útil para configuração de limites inferiores e superiores para as leituras, delimitando a faixa de leitura relevante para a aplicação (valores lidos fora da região de leitura são automaticamente assumidos como zero).
+
 - Tensão/consumo típicos:
-> A tensão de alimentação recomendada é de 2,7 V à 3,3 V.
+> Tensão de alimentação recomendada entre 2,7 V e 3,3 V. Possui modo de baixo consumo, podendo operar em estado sleep consumindo poucos microampères quando não está realizando conversões.
 
 - Faixa de medição / resolução:
+> O sensor fornece valores digitais de 16 bits para cada um dos canais Vermelhho, Verde, Azul, e intensidade total, resultando em uma faixa de valores entre 0 e 65535 contagens por canal. O tempo de integração é configurável entre 2,4 ms e 700 ms, permitindo ajustar a sensibilidade e o alcance dinâmico da leitura. Além disso, o ganho interno pode ser configurado em 1×, 4×, 16× ou 60×, possibilitando adaptação a diferentes condições de iluminação (desde ambientes escuros até intensamente iluminados).
+
 - Datasheet (URL): [GY-33 CS3472](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf)
 
 ## 2. Conexões de hardware
-- Para realiza a conexão utiliza-se a conexão J6, conforme a tabela:
+- Para realizar a conexão utiliza-se a conexão J6, conforme a tabela:
 
 | Pino GY-33 (TCS34725) | BitDogLab (RP2040) | Função                           |
 | --------------------- | ------------------ | -------------------------------- |
