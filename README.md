@@ -1,6 +1,6 @@
 # <NOME DO SENSOR> — Sensores na BitDogLab
 
-**Dupla:** Tiago Silveira Zaparoli (237310 / TZShinobi), Vinicius P. M. Miguel (260731)
+**Dupla:** Tiago Silveira Zaparoli (237310 / TZShinobi), Vinicius P. M. Miguel (260731 / viniciuskant)
 **Turma:** EA801 — 2025S2  
 
 ## 1. Descrição do sensor
